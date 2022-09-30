@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h2, h3 {
   margin:0;
   padding:0;
   padding-bottom:1.5rem;
@@ -92,8 +92,8 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #ffe08a;
-  color: #4a4a4a;
+  background-color: rgba(213, 226, 21, 0.8);
+  color: #dd0f0f;
 
   /* shapes */
   border-radius: 6px;
@@ -117,7 +117,7 @@ form {
 */
 
 .box {
-  background-color: rgba(239, 239, 239, 0.40);
+  background-color: rgb(236, 32, 32);
   border: 2px dashed;
   border-radius: 4px;
 
@@ -128,18 +128,20 @@ form {
 }
 
 .left_section {
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: rgba(213, 226, 21, 0.8);
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: rgba(255, 224, 138, 0.7);
+  background-color: rgba(213, 226, 21, 0.8);
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
   max-width: 450px;
+  display: flex;
+  flex-flow:column;
 }
 
 /*
@@ -151,13 +153,13 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: rgba(3, 3, 3, 0.8);
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .footer a {
-  color: rgba(255, 224, 138, 1);
+  color: rgb(243, 243, 243);
   text-decoration: underline;
 }
 
@@ -301,6 +303,9 @@ form input {
     /* Rules in here will only apply when a screen is the correct size */
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
-      background-color: rgba(204, 8, 162, 0.65);
+      background-color: rgba(91, 76, 228, 0.897);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 }
